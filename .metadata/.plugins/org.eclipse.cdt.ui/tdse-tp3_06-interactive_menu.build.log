@@ -1,0 +1,18 @@
+21:08:27 **** Incremental Build of configuration Debug for project tdse-tp3_06-interactive_menu ****
+make -j4 all 
+arm-none-eabi-gcc "../app/src/task_menu.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_menu.d" -MT"app/src/task_menu.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_menu.o"
+arm-none-eabi-gcc -o "tdse-tp3_06-interactive_menu.elf" @"objects.list"  -lrdimon -mcpu=cortex-m3 -T"/home/gabriel/STM32CubeIDE/tdse_workspace_tp3/tdse-tp3_06-interactive_menu/STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tdse-tp3_06-interactive_menu.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: warning: tdse-tp3_06-interactive_menu.elf has a LOAD segment with RWX permissions
+Finished building target: tdse-tp3_06-interactive_menu.elf
+ 
+arm-none-eabi-size  tdse-tp3_06-interactive_menu.elf 
+arm-none-eabi-objdump -h -S tdse-tp3_06-interactive_menu.elf  > "tdse-tp3_06-interactive_menu.list"
+   text	   data	    bss	    dec	    hex	filename
+  19736	    184	   2336	  22256	   56f0	tdse-tp3_06-interactive_menu.elf
+Finished building: default.size.stdout
+ 
+Finished building: tdse-tp3_06-interactive_menu.list
+ 
+
+21:08:28 Build Finished. 0 errors, 1 warnings. (took 884ms)
+

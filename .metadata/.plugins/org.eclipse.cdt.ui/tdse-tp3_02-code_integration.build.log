@@ -1,0 +1,10 @@
+23:48:27 **** Build of configuration Debug for project tdse-tp3_02-code_integration ****
+make -j4 all 
+arm-none-eabi-size  tdse-tp3_02-code_integration.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15072	    136	   2264	  17472	   4440	tdse-tp3_02-code_integration.elf
+Finished building: default.size.stdout
+ 
+
+23:48:28 Build Finished. 0 errors, 0 warnings. (took 673ms)
+
